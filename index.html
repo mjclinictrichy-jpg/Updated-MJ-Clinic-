@@ -12,7 +12,7 @@
     <meta name="robots" content="index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1">
     <link rel="canonical" href="https://www.mjclinictrichy.com">
     
-    <!-- UPDATED Favicon & Logo Support for Google Search and Browsers (New favicon assets) -->
+    <!-- UPDATED Favicon & Logo Support for Google Search and Browsers -->
     <link rel="icon" type="image/png" sizes="16x16" href="https://i.ibb.co/S4Tbq3JB/favicon-16x16.png">
     <link rel="icon" type="image/png" sizes="32x32" href="https://i.ibb.co/scSSxQs/favicon-32x32.png">
     <link rel="icon" type="image/png" sizes="192x192" href="https://i.ibb.co/Q338m6Vp/android-chrome-512x512.png">
@@ -21,17 +21,25 @@
     <meta name="msapplication-TileColor" content="#0B4D9B">
     <meta name="theme-color" content="#0B4D9B">
     
-    <!-- Open Graph / Social Media Optimization -->
+    <!-- Open Graph / Social Media Optimization (UPDATED with new preview image + cache buster) -->
     <meta property="og:title" content="MJ Clinic Trichy | Advanced Orthopedic &amp; Healthcare Clinic in Trichy">
     <meta property="og:description" content="MJ Clinic Trichy provides advanced orthopedic care, medical consultations, pain management, joint treatments, physiotherapy support, and comprehensive healthcare services in Trichy. Book appointments online with experienced doctors for trusted and personalized medical care.">
     <meta property="og:type" content="website">
     <meta property="og:url" content="https://www.mjclinictrichy.com">
-    <meta property="og:image" content="https://i.ibb.co/xSHfQwVF/IMG-20260512-WA0015.jpg">
+    <!-- NEW SOCIAL SHARE IMAGE (1200x630) with cache buster -->
+    <meta property="og:image" content="https://i.ibb.co/HLC6J9t6/IMG-20260509-WA0000-1.jpg?v=2">
     <meta property="og:image:width" content="1200">
     <meta property="og:image:height" content="630">
-    <meta property="og:image:alt" content="MJ Clinic Trichy Advanced Orthopedic Care Facility">
+    <meta property="og:image:alt" content="MJ Clinic Trichy - Modern Orthopaedic Care Facility">
     <meta property="og:site_name" content="MJ Clinic Trichy">
     <meta property="og:locale" content="en_IN">
+    
+    <!-- Twitter Card for better sharing on X/Twitter (using the same new image + cache buster) -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="MJ Clinic Trichy | Advanced Orthopedic &amp; Healthcare Clinic in Trichy">
+    <meta name="twitter:description" content="MJ Clinic Trichy provides advanced orthopedic care, medical consultations, pain management, joint treatments, physiotherapy support, and comprehensive healthcare services in Trichy.">
+    <meta name="twitter:image" content="https://i.ibb.co/HLC6J9t6/IMG-20260509-WA0000-1.jpg?v=2">
+    <meta name="twitter:image:alt" content="MJ Clinic Trichy - Modern Orthopaedic Care Facility">
    
     <!-- Structured Data: Medical Clinic Schema (JSON-LD) for Rich Results -->
     <script type="application/ld+json">
@@ -98,6 +106,7 @@
     <link href="https://cdn.jsdelivr.net/npm/lightbox2@2.11.4/dist/css/lightbox.min.css" rel="stylesheet">
 
     <style>
+        /* ========== ALL EXISTING STYLES REMAIN EXACTLY THE SAME ========== */
         :root {
             --primary: #0B4D9B;
             --primary-dark: #083a6b;
@@ -609,7 +618,7 @@
         <div class="section-header" data-aos="fade-up"><h2 class="section-title">Gallery</h2><p class="section-subtitle">A modern, well‑equipped orthopaedic clinic designed for your comfort.</p></div>
         <div class="swiper gallery-swiper" data-aos="fade-up" id="gallery-swiper">
             <div class="swiper-wrapper">
-                <!-- NEW GALLERY IMAGE ADDED FIRST (as requested) -->
+                <!-- GALLERY IMAGE: first image as requested -->
                 <div class="swiper-slide gallery-item"><a href="https://i.ibb.co/gZSB22Q0/IMG-20260509-WA0000-1.jpg" data-lightbox="facility"><img src="https://i.ibb.co/gZSB22Q0/IMG-20260509-WA0000-1.jpg" alt="MJ Clinic Premium Treatment Room" loading="lazy"></a></div>
                 <div class="swiper-slide gallery-item"><a href="https://i.ibb.co/xSHfQwVF/IMG-20260512-WA0015.jpg" data-lightbox="facility"><img src="https://i.ibb.co/xSHfQwVF/IMG-20260512-WA0015.jpg" alt="MJ Clinic Trichy modern consultation room" loading="lazy"></a></div>
                 <div class="swiper-slide gallery-item"><a href="https://i.ibb.co/fVp2B1YF/IMG-20260512-WA0007.jpg" data-lightbox="facility"><img src="https://i.ibb.co/fVp2B1YF/IMG-20260512-WA0007.jpg" alt="MJ Clinic reception area" loading="lazy"></a></div>
@@ -856,7 +865,7 @@
 
             dateInput?.addEventListener('change', checkSunday);
 
-            // ========== BOOKING SUBMIT WITH UPDATED WHATSAPP FORMAT ==========
+            // BOOKING SUBMIT (same as before, with desired WhatsApp format)
             const bookingForm = document.getElementById('booking-form');
             if(bookingForm) {
                 bookingForm.addEventListener('submit', async function(e){
@@ -932,7 +941,7 @@
                         return;
                     }
 
-                    // NEW WHATSAPP MESSAGE FORMAT as requested
+                    // WhatsApp message format as requested
                     const waMsg = `MJ CLINIC TRICHY%0ABOOKING CONFIRMED%0AID: ${bookingId}%0A*Name:* ${name}%0A*Mobile:* ${mobile}%0A*Patient Type:* ${patientType}%0A*Treatment:* ${treatment}%0A*Date:* ${date}%0A*Time:* ${time}`;
                     
                     const popup = document.getElementById('success-popup');
